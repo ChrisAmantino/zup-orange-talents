@@ -37,17 +37,17 @@
 			<div class="col-md-8" ng-app="myApp" ng-controller="myCtrl">
 				<form>
 					<div class="mb-4 mt-5">
-						<input type="text" class="form-control" id="nome" ng-model="nome"
+						<input type="text" class="form-control box border border-3 border-warning" id="nome" ng-model="nome"
 							placeholder="Nome Completo">
 					</div>
 					<div class="mb-4">
-						<input type="email" class="form-control" id="email"
+						<input type="email" class="form-control box border border-3 border-warning" id="email"
 							ng-model="email" placeholder="E-mail">
 					</div>
 					<div class="row">
 						<div class="col-md-6">
 							<div class="mb-4">
-								<input type="text" class="form-control" id="cpf" ng-model="cpf"
+								<input type="text" class="form-control box border border-3 border-warning" id="cpf" ng-model="cpf"
 									placeholder="CPF (Digite apenas os números)">
 							</div>
 						</div>
@@ -55,11 +55,11 @@
 							<div class="mb-4 mt-3">
 								<label for="dataNascimento" 
 									class="text-light">Data de nascimento:</label> 
-									<input type="date" name="nascimento" id="dataNascimento" ng-model="dataNascimento">
+									<input type="date" class="box border border-3 border-warning" name="nascimento" id="dataNascimento" ng-model="dataNascimento">
 							</div>
 						</div>
 					</div>
-					<button class="btn btn-outline-light" ng-click="cadastrar()">Cadastrar</button>
+					<button class="btn btn-outline-light d-flex" ng-click="cadastrar()">Cadastrar</button>
 				</form>
 
 			</div>
@@ -78,6 +78,7 @@
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
 		integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
 		crossorigin="anonymous"></script>
+	 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
 
 </body>
