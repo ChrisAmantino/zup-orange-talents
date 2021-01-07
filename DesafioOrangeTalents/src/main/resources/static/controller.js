@@ -4,13 +4,15 @@ app.controller('myCtrl', function($scope, $http) {
 
   $scope.usuario = new Object();
 
-
+/*Método para cadastrar o usuário*/
 $scope.cadastrar = function() {
+	/*Salvando os valores digitados nos inputs em variáveis */
 	let nome = document.querySelector('#nome')
 	let email = document.querySelector('#email')
 	let cpf = document.querySelector('#cpf')
 	let data = document.querySelector('#dataNascimento')
 	
+	/*Condição imposta para não cadastrar caso algum input esteja vazio*/
 	if(nome.value == '' || email.value == '' || cpf.value == '' || data.value == ''){
 		Swal.fire('Ops!', 'Preencha todos os campos!','warning')
 	} else {

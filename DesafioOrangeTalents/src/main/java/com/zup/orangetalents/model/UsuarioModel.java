@@ -20,6 +20,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 @Table(name="tb_usuarios")
 public class UsuarioModel {
 	
+	//Atributos
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
@@ -41,6 +42,8 @@ public class UsuarioModel {
 	@JsonFormat(pattern="yyyy-mm-dd")
 	private Date dataNascimento;
 
+	
+	//Getters e Setters
 	public long getId() {
 		return id;
 	}

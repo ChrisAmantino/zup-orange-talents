@@ -17,9 +17,11 @@ import com.zup.orangetalents.repository.UsuarioRepository;
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 public class UsuarioController {
 	
+	//Injetando o UsuarioRepository
 	@Autowired
 	private UsuarioRepository repository;
 	
+	//Método post para cadastrar o usuário
 	@PostMapping("/cadastro")
 	public ResponseEntity<UsuarioModel> post (@RequestBody UsuarioModel usuario) {
 		return ResponseEntity.status(HttpStatus.CREATED)
